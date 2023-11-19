@@ -1,11 +1,19 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('/src/fonts/Poppins/Poppins-Regular.ttf');
+    font-family: 'Montserrat';
+    src: url('/src/fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Poppins Light';
-    src: url('/src/fonts/Poppins/Poppins-Light.ttf');
+    font-family: 'Montserrat';
+    src: url('/src/fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-weight: 600;
 }
 
 * {
@@ -13,8 +21,12 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .body {
-    background-color: #252323;
+    background-color: #111015;
 }
 
 .container {
@@ -22,31 +34,84 @@
     margin: 0 auto;
 }
 
-.header-flex {
-    height: 125px;
+.header {
+    margin: 26px 24px 0 24px;
+    height: 50px;
+}
+
+.header__navigation {
+    display: flex;    
+    align-items: center;      
+}
+
+.header__left {
+    margin-right: 262px;
+}
+
+.header__list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 14px;
+}
+
+.header__geolocation {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.header__link-text {
+    font-family: 'Montserrat', sans-serif;
+    width: 400;
+    font-size: 16px;
+    color: #FEFEFE;
+}
+
+.header__search {
+    display: flex;
+    gap: 10px;
+    background-color: #1E1E1E;
+    width: 492px;
+    height: 46px;
+    border-radius: 10px;
     align-items: center;
 }
 
-.header__title-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 60px;
-    font-weight: 400;
-    color: #ffff;
+.header__search-image {
+    margin-left: 29px;
+    height: 24px;
+    width: 24px;
 }
 
-.header__navigation-list {
+.header__search-text {
+    font-family: 'Montserrat', sans-serif;
+    width: 400;
+    font-size: 14px;
+    color: #EDEDED;
+}
+
+.header__right {
+    margin-left: 155px;
+}
+
+.theme {
+    width: 115px;
+    height: 46px;
+    box-sizing: border-box;
+    background-color: #19191B;
+    border: 1px solid #626161;
+    border-radius: 20px;
     display: flex;
-    list-style: none;
-    gap: 25px;
-    justify-content: space-between;
+    align-items: center;
+
+}
+.theme__circle {
+    height: 40px;
+    padding: 0 4px 0 4px;
 }
 
-.list-elements__elements-link {
-    text-decoration: none;
-    color: #ffff;
-    font-family: 'Poppins Light', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+.theme__circle-image {
+    height: 40px;
+    width: 40px;
 }

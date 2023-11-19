@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather WebSite</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header"> 
         <div class="container">
-            <div class="header-flex">
-                <div class="header__title">
-                    <h1 class="header__title-text">WeatherMe</h1>
-                </div>
-                <nav class="header__navigation">
-                    <ul class="header__navigation-list">
-                        <li class="navigation-list__list-elements"><a href="" class="list-elements__elements-link">Weather</a></li>
-                        <li class="navigation-list__list-elements"><a href="" class="list-elements__elements-link">??????</a></li>
-                        <li class="navigation-list__list-elements"><a href="" class="list-elements__elements-link">Other products</a></li>
+            <div class="header__navigation">
+                <nav class="header__left">
+                    <ul class="header__list">
+                        <li><a href="" class="header__link">
+                            <img src="/src/icons/Dashboard Icon.svg" alt="Dashboard Icon" class="header__link-image">
+                        </a></li>
+                        <li><a href="" class="header__link">
+                            <img src="/src/icons/Notification Icon.svg" alt="Notification Icon" class="header__link-image">
+                        </a></li>
+                        <li><a href="" class="header__link">
+                            <div class="header__geolocation">
+                                <img src="/src/icons/Geolocation Icon.svg" alt="Geolocation Icon" class="header__link-image">
+                                <p class="header__link-text">City</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav class="header__center">
+                    <div class="header__search">
+                        <img src="/src/icons/Search Icon.svg" alt="Search Icon" class="header__search-image">
+                        <p class="header__search-text">Search</p>
+                    </div>
+                </nav>
+                <nav class="header__right">
+                    <ul class="header__list">
+                        <li>
+                            <div class="theme">
+                                <div class="theme__circle">
+                                    <img src="/src/icons/Moon Icon.svg" alt="Moon Icon" class="theme__circle-image">
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="" class="header__link">
+                            <img src="/src/icons/Profile Icon.svg" alt="Profile Icon" class="header__profile-image">
+                        </a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main class="main">
-        <div class="container">
-            
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            
-        </div>
-    </footer>
+    <main class="main"></main>
+    <footer class="footer"></footer>
 </body>
 </html>
